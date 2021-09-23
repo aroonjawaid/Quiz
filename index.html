@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="quiz-container">
+
+       <div id="title">
+           <h1>What is your learning style</h1>
+       </div>
+   
+
+
+        <!-- intro section -->
+
+        <div id="intro">
+            <h2>Find out your learning style</h2>
+            <p>Answer the questions to find your learning style</p>
+            <input id="startquizbutton" type="button" value="Start Quiz" onclick="startQuiz()">
+        </div>
+
+        <!-- question 1 -->
+
+        <div id="question1">
+    
+
+                <div id="questionscontainer">
+                    <div>
+                        <h2>When you study</h2>
+                    </div>
+
+
+                    <div id="answer">
+                        <input type="radio" name="quest1" id="a" value=1>
+                        <label for="a"> A) I read 1</label>
+                    </div>
+
+                    <div id="answer">
+                        <input type="radio" name="quest1" id="b" value=1>
+                        <label for="b"> A) I read 1</label>
+                    </div>
+
+                    <div id="answer">
+                        <input type="radio" name="quest1" id="c" value=1>
+                        <label for="c"> A) I read 1</label>
+                    </div>
+                
+                    
+
+                
+                </div>
+
+                <div>
+                    <input id="q1nextbutton" type="button" value="Next" onclick="question2()">
+                </div>
+
+        </div>
+
+
+        <!-- Question 2 -->
+
+        <div id="question2">
+            
+
+                <div id="questionscontainer">
+
+                    <div>
+                        <h2>Which is blue</h2>
+                    </div>
+
+                    <div id="answer">
+                        <input type="radio" name="quest2" id="a" value=1>
+                        <label for="a"> A) I read 1</label>
+                    </div>
+
+                    <div id="answer">
+                        <input type="radio" name="quest2" id="b" value=1>
+                        <label for="b"> A) I read 1</label>
+                    </div>
+
+                    <div id="answer">
+                        <input type="radio" name="quest2" id="c" value=1>
+                        <label for="c"> A) I read 1</label>
+                    </div>
+                </div>
+
+                    <div>
+                        <input id="q1nextbutton" type="button" value="Results" onclick="results()">
+                    </div>
+
+                   
+
+                
+
+
+
+        </div>
+
+            <!-- Results -->
+            <div id="results">
+                <h2>Your result</h2>
+                <p id="result"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
