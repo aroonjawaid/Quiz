@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Quiz</title>
 </head>
 
@@ -12,7 +15,7 @@
     <div class="quiz-container">
 
        <div id="title">
-           <h1>What is your learning style</h1>
+           <h1>The Ultimate Attack on Titan Quiz</h1>
        </div>
    
 
@@ -20,9 +23,13 @@
         <!-- intro section -->
 
         <div id="intro">
-            <h2>Find out your learning style</h2>
-            <p>Answer the questions to find your learning style</p>
+            <!-- <h2>Find out your learning style</h2> -->
+            <p>Test Your Attack on Titan Knowledge With This Trivia Quiz</p>
             <input id="startquizbutton" type="button" value="Start Quiz" onclick="startQuiz()">
+        </div>
+
+        <div class="spacer">
+            &nbsp;
         </div>
 
         <!-- question 1 -->
@@ -51,9 +58,6 @@
                         <label for="c"> A) I read 1</label>
                     </div>
                 
-                    
-
-                
                 </div>
 
                 <div>
@@ -68,45 +72,140 @@
         <div id="question2">
             
 
-                <div id="questionscontainer">
+            <div id="questionscontainer">
 
-                    <div>
-                        <h2>Which is blue</h2>
-                    </div>
-
-                    <div id="answer">
-                        <input type="radio" name="quest2" id="a" value=1>
-                        <label for="a"> A) I read 1</label>
-                    </div>
-
-                    <div id="answer">
-                        <input type="radio" name="quest2" id="b" value=1>
-                        <label for="b"> A) I read 1</label>
-                    </div>
-
-                    <div id="answer">
-                        <input type="radio" name="quest2" id="c" value=1>
-                        <label for="c"> A) I read 1</label>
-                    </div>
+                <div>
+                    <h2>Which is blue</h2>
                 </div>
 
-                    <div>
-                        <input id="q1nextbutton" type="button" value="Results" onclick="results()">
-                    </div>
+                <div id="answer">
+                    <input type="radio" name="quest2" id="a" value=1>
+                    <label for="a"> A) I read 1</label>
+                </div>
 
-                   
+                <div id="answer">
+                    <input type="radio" name="quest2" id="b" value=1>
+                    <label for="b"> A) I read 1</label>
+                </div>
 
+                <div id="answer">
+                    <input type="radio" name="quest2" id="c" value=1>
+                    <label for="c"> A) I read 1</label>
+                </div>
+            </div>
+
+            <div>
+            <input id="q1nextbutton" type="button" value="Next" onclick="question3()">
+            </div>
                 
-
-
-
         </div>
 
-            <!-- Results -->
-            <div id="results">
-                <h2>Your result</h2>
-                <p id="result"></p>
+        <!-- Question 3 -->
+
+        <div id="question3">
+            
+
+            <div id="questionscontainer">
+
+                <div>
+                    <h2>Question3</h2>
+                </div>
+
+                <div id="answer">
+                    <input type="radio" name="quest3" id="a" value=1>
+                    <label for="a"> A) I read 1</label>
+                </div>
+
+                <div id="answer">
+                    <input type="radio" name="quest3" id="b" value=1>
+                    <label for="b"> A) I read 1</label>
+                </div>
+
+                <div id="answer">
+                    <input type="radio" name="quest3" id="c" value=1>
+                    <label for="c"> A) I read 1</label>
+                </div>
             </div>
+
+            <div>
+            <input id="q1nextbutton" type="button" value="Next" onclick="question4()">
+            </div>
+                
+        </div>
+
+        <!-- Question 4 -->
+
+        <div id="question4">
+            
+
+            <div id="questionscontainer">
+
+                <div>
+                    <h2>Question4</h2>
+                </div>
+
+                <div id="answer">
+                    <input type="radio" name="quest4" id="a" value=1>
+                    <label for="a"> A) I read 1</label>
+                </div>
+
+                <div id="answer">
+                    <input type="radio" name="quest4" id="b" value=1>
+                    <label for="b"> A) I read 1</label>
+                </div>
+
+                <div id="answer">
+                    <input type="radio" name="quest4" id="c" value=1>
+                    <label for="c"> A) I read 1</label>
+                </div>
+            </div>
+
+            <div>
+            <input id="q1nextbutton" type="button" value="Next" onclick="question5()">
+            </div>
+                
+        </div>
+                
+
+        <!-- Question 5 -->
+
+        <div id="question5">
+            
+
+            <div id="questionscontainer">
+
+                <div>
+                    <h2>Question5</h2>
+                </div>
+
+                <div id="answer">
+                    <input type="radio" name="quest5" id="a" value=1>
+                    <label for="a"> A) I read 1</label>
+                </div>
+
+                <div id="answer">
+                    <input type="radio" name="quest5" id="b" value=1>
+                    <label for="b"> A) I read 1</label>
+                </div>
+
+                <div id="answer">
+                    <input type="radio" name="quest5" id="c" value=1>
+                    <label for="c"> A) I read 1</label>
+                </div>
+            </div>
+
+            <div>
+                <input id="q1nextbutton" type="button" value="Results" onclick="results()">
+            </div>
+                
+        </div>
+                
+
+        <!-- Results -->
+        <div id="results">
+            <h2>Your result</h2>
+            <p id="result"></p>
+        </div>
 
         </div>
 
