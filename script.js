@@ -113,9 +113,9 @@ function calculateResults() {
   console.log(result);
 
   if (result > 12) {
-    msg = "Well done! You're a mega fan";
+    msg = "Well done! You're a mega fan!";
   } else if (result > 7) {
-    msg = "Well done! You got most of the questions correct.";
+    msg = "Well done! You got most of the questions right.";
   } else {
     msg = "Imposter! Not a Fan lul. Try again.";
   }

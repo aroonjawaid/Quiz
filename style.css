@@ -5,11 +5,12 @@
   /* border: 1px solid red; */
 }
 
-
-
 body{
   text-align: center;
-  background-color: #b8c6db;
+  /* background-color: #b8c6db; */
+  background-image:  url(images/background-img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Be Vietnam Pro', sans-serif;
   display: flex;
   align-items: center;
@@ -43,7 +44,6 @@ body{
 #intro p{
   display: flex;
   flex-direction: column;
-  font-size: ;
   /* border: 1px solid red; */
   padding-top: 25px;
   padding-left: 25px;
