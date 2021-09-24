@@ -31,7 +31,7 @@ function question2() {
 }
 
 /**
- * hides question 3 shows question 4
+ * hides question 4 shows question 5
  */
  function question5() {
   document.getElementById("question4").style.display = "none";
@@ -39,7 +39,7 @@ function question2() {
 }
 
 /**
- * hides question  shows results
+ * hides question 5 shows results
  */
 function results() {
   calculateResults()
@@ -60,7 +60,8 @@ function calculateResults() {
           break;
       }
   }
-  
+  // console.log(q1Value);
+
   const radios2 = document.querySelectorAll('input[name="quest2"]');
   let q2Value;
   for (const rb of radios2) {
@@ -69,6 +70,9 @@ function calculateResults() {
           break;
       }
   }
+
+  // console.log(q2Value);
+  
 
   const radios3 = document.querySelectorAll('input[name="quest3"]');
   let q3Value;
@@ -79,6 +83,9 @@ function calculateResults() {
       }
   }
 
+  // console.log(q3Value);
+  
+
   const radios4 = document.querySelectorAll('input[name="quest4"]');
   let q4Value;
   for (const rb of radios4) {
@@ -88,24 +95,29 @@ function calculateResults() {
       }
   }
 
+  // console.log(q4Value);
+
   const radios5 = document.querySelectorAll('input[name="quest5"]');
   let q5Value;
   for (const rb of radios5) {
       if (rb.checked) {
-          q4Value = rb.value;
+          q5Value = rb.value;
           break;
       }
   }
 
+  
+
   let total = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value);
   result = total;
-  
-  if (result > 6) {
-    msg = "Well done, your mega fan";
+  console.log(result);
+
+  if (result > 12) {
+    msg = "Well done! You're a mega fan";
   } else if (result > 7) {
-    msg = "You answered mostly b, you may have an auditory learning style";
+    msg = "Well done! You got most of the questions correct.";
   } else {
-    msg = "You answered mostly a, you may have a visual learning style";
+    msg = "Imposter! Not a Fan lul. Try again.";
   }
 
   document.getElementById("result").innerHTML = msg
