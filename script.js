@@ -98,17 +98,17 @@ function calculateResults() {
   }
 
   let total = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value);
-  result = total / 2;
+  result = total;
   
   if (result > 6) {
-    msg = "You answered mostly c you may have a kinesthetic learning style";
-  } else if (result >= 3) {
+    msg = "Well done, your mega fan";
+  } else if (result > 7) {
     msg = "You answered mostly b, you may have an auditory learning style";
   } else {
     msg = "You answered mostly a, you may have a visual learning style";
   }
 
-  document.getElementById("result").innerHTML = msg;
+  document.getElementById("result").innerHTML = msg
 
 }
 
